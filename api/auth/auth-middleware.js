@@ -58,6 +58,7 @@ async function checkUsernameExists(req,res,next) {
   }catch(e){
         res.status(500).json(`Server error: ${e}`)
     }
+    console.log(req.userData)
 }
 
 /*
